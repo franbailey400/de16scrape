@@ -1,0 +1,6 @@
+services:
+  - docker
+
+script:
+  - docker image build -t fsb20/blatest .
+  - docker container run fsb20/blatest
